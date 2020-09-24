@@ -39,7 +39,7 @@ update(Node, Time, Clock) ->
     List = lists:keyreplace(Node, 1, Clock, {Node, Time}),
     List.
 
-% is it safe to\ log an event that happened at a given
+% is it safe to log an event that happened at a given
 % time, true or false
 safe(_, []) ->
     true;

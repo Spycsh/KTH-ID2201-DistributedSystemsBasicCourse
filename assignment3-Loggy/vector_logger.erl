@@ -22,9 +22,9 @@ insertQueue([H|T], E, Flag) ->
     case E of {_,_,InsertV,_} ->
         case H of {_, _, V, _} -> 
             Res = vector_time:leq(InsertV, V),
-            if Res ->
+            if Res and (Flag==false)->
                 [E,H|insertQueue(T, E, true)];
-            true -> [H|insertQueue(T, E, false)]
+            true -> [H|insertQueue(T, E, Flag)]
             end
         end
     end.
