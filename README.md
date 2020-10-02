@@ -8,4 +8,7 @@ A small web server by Erlang
 A routing network based on link-state protocol
 
 ## Loggy
-A logical time logger based on Lamport logical clock and Vector clock algorithm.
+A logical time logger based on Lamport logical clock and Vector clock algorithm
+
+## Groupy
+A group communication application
